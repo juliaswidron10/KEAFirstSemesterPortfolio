@@ -1,0 +1,76 @@
+main{
+    margin-top: -8vw ;
+}
+.photo_left{
+    display: flex;
+    text-align: right;
+}
+.photo_left > div{
+    width: 60vw;
+    height: 30vw;
+    margin-left: 5vw;
+}
+.photo_left > div > img{
+    height: 100%;
+    width: auto;
+    box-shadow: 5px 5px 23px lightgrey;
+}
+.txt_aside a, .txt_aside_left a{
+    color: black;
+    text-decoration: none;
+}
+.txt_aside{
+    margin-right: 5vw;
+    margin-top: 4vw;
+}
+.txt_aside h1, .txt_aside_left h1{
+    font-size: 3vw;
+    line-height: 2.7vw;
+}
+.txt_aside p, .txt_aside_left p{
+    font-size: 1.5vw;
+}
+.buttona{
+    font-size: 1.5vw;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10vw;
+    color: black;
+}
+.buttona:hover{
+    background-color: lightgray;
+    border: none;
+    color: white;
+}
+
+.photo_right{
+    display: flex;
+    text-align: left;
+}
+.photo_right > div{
+    width: 60vw;
+    height: 30vw;
+    margin-left: 5vw;
+}
+.photo_right > div > img{
+    height: 100%;
+    width: auto;
+    margin-right: 5vw;
+}
+.txt_aside_left{
+    margin-top: 4vw;
+}
+@media only screen and (max-width:600px){
+    main{
+        margin: 0;
+    }
+    .pic{
+        margin: 0;
+        width: 30vw;
+        height: 30vw;
+    }
+    .photo_left > div > img{
+        
+    }
+}

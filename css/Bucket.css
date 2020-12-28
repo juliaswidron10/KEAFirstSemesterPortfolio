@@ -1,0 +1,353 @@
+main {
+    margin: -8vw 5vw 0 5vw;
+    display: flex;
+}
+.burger_menu{
+    display: none;
+}
+.left {
+    width: 60vw;
+    height: 56.25vw;
+
+}
+/*
+.top_mobile > .navig{
+    display: none;
+}
+*/
+.left > #big_pic {
+    position: relative;
+    display: flex;
+    width: 55vw;
+    height: 27.5vw;
+}
+
+.pic1 {
+    background-image: url("images/Bucket2.png");
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    width:100%;
+    height: 100%;
+    box-shadow: 5px 5px 23px lightgrey;}
+
+.pic2 {
+    background-image: url("images/Bucket3.png");
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 23px lightgrey;
+}
+.pic3 {
+    background-image: url("images/Bucket4.png");
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 23px lightgrey;
+}
+.pic4 {
+    background-image: url("images/Bucket5.png");
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    width: 70%;
+    height: 100%;
+    box-shadow: 5px 5px 23px lightgrey;
+}
+.pic5 {
+    background-image: url("images/Bucket8.png");
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 27.5vw;
+    box-shadow: 5px 5px 23px lightgrey;
+}
+.minatures {
+    display: flex;
+    width: 100%;
+    height: 7.5vw;
+    margin: .3vw 0;
+}
+
+.minatures > .min {
+    width: 10vw;
+    height: auto;
+    overflow: hidden;
+    margin-right: .5vw;
+}
+
+#min1,
+#min2 {
+    z-index: 6;
+}
+
+.minatures > .min > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+    height: 100%;
+    box-shadow: 5px 5px 23px lightgrey;
+    cursor: pointer;
+}
+
+.foot {
+    display: flex;
+    width: 100%;
+    height: 12.5vw;
+}
+
+.navig {
+    display: flex;
+    height: 2.5vw;
+    width: 35vw;
+    margin-top: 3vw;
+}
+
+.empty {
+    width: 2vw
+}
+
+.navig > .grey {
+    background-color: lightgray;
+    width: 5px;
+    height: 2vw;
+    margin: 0.2vw 1vw 0 0;
+    position: relative;
+}
+
+/*
+.navig > a {
+    margin-right: 1vw;
+    position: relative;
+    line-height: 2vw;
+    color: black;
+    font-size: 2vw;
+    text-decoration: none;
+}
+*/
+
+.navig > a:hover {
+    color: lightgray
+}
+
+.downl {
+    position: absolute;
+    right: 0;
+    height: 4vw;
+    width: 17vw;
+    margin-top: 14vw;
+}
+
+.downl > a {
+    display: flex;
+    padding: .5vw;
+    border: solid 2px lightgrey;
+    cursor: pointer;
+}
+
+.downl > a > img {
+    width: 2.5vw;
+    height: 2.5vw;
+    padding: .75vw;
+}
+
+.downl > a > div > h3 {
+    font-weight: 100;
+    font-size: 1vw;
+    margin: 0 1vw;
+}
+
+.downl > a > div > h4 {
+    font-weight: 100;
+    font-size: 1vw;
+    margin: 0 1vw;
+    color: lightgray;
+}
+
+.right{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+
+
+ul {
+    position: static;
+    margin:7vw 2vw 0 0;
+    width: 100%
+}
+ul li{
+    list-style-type: none;
+    
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+ul li a h1{
+    display: flex;
+    font-size: 2vw;
+    font-weight: 200;
+    line-height: 2vw;
+    
+}
+ ul li a h2{
+    display: flex;
+    font-size: 1.5vw;
+    font-weight: 200;
+    line-height: 1.5vw;
+    
+}
+ul li a h1 .grey, ul li a h2 .grey{
+    background-color: lightgray;
+    width: 5px;
+    height: 1.5vw;
+    position: relative;
+    margin: 0vw 1vw 0vw 0vw;
+}
+ul li a p {
+    margin-top: 0;
+    position: fixed;
+    visibility: hidden;
+}
+#plink{
+    font-size: 1vw;
+}
+ul li a h1:hover, ul li a h2:hover{
+    font-weight: 600;
+}
+.visible{
+    position: sticky;
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 600px){
+    main{
+        display:block;
+        margin:0;
+    }
+    .left{
+        position: relative;
+        width: 100vw;
+        height: auto;
+    }
+    .left > #big_pic {
+        width: 100vw;
+        height: 50vh;
+        
+    }
+    .pic1{
+        height: 100%;
+        width: 37.5vh;
+        background-repeat: no-repeat;
+    }
+    .pic2{
+        height: 100%;
+        width: 37.5vh;
+        background-repeat: no-repeat;
+    }
+    .minatures{
+        margin: 1vw 5vw;
+        height: 20vw;
+        width: 90vw;
+    }
+    .minatures > .min {
+        height: 20vw;
+        width: auto;
+        padding: 0 1vw 0 0;
+        z-index: 1;
+    }
+    .pic1{
+        height: auto;
+        width: 100%;
+    }
+    .pic2{
+        height: auto;
+        width: 100%;
+    }
+    .pic3{
+        height: 53vw;
+        width: 100%;
+    }
+    .pic4{
+        height: 70vw;
+        width: 100%;
+    }
+    .pic5{
+        height: 53vw;
+        width: 100%;
+    }
+    .right{
+        position:relative;
+    }
+     ul{
+         position: relative;
+/*        margin: 18vw 0;*/
+        width: 80vw
+    }
+    ul li a h1{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    ul li a h2{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    #plink{
+         font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+    .downl {
+        margin-right: 5vw;
+        width: 50vw;
+        height: 20vw;
+    }
+    .downl > a > img{
+        width: 10vw;
+        height: 10vw;
+    }
+    .downl > a > div > h3{
+        font-size: 3vw;
+    }
+    .downl > a > div > h4{
+        font-size: 3vw;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 950px){
+    ul{
+        width: 30vw;
+    }
+    ul li a h1{
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+    ul li a h2{
+        font-size: 1.5vw;
+        line-height: 1.5vw;
+    }
+    ul li a p{
+        font-size: 1.5vw;
+        line-height: 1.5vw;
+    }
+    #plink{
+         font-size: 1.5vw;
+        line-height: 1.5vw;
+    }
+}

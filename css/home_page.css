@@ -1,0 +1,60 @@
+.Welcome{
+    position: relative;
+    padding: 0vw 5vw;
+}
+.Welcome h1{
+    font-size: 13vw
+}
+.Welcome h2{
+    font-size: 4vw;
+    font-weight: 200;
+    margin: -11vw 0 ;
+}
+.button_st{
+    position: relative;
+     text-align: right;
+    width: 100vw;
+  
+}
+.button_st a{
+    margin: 5vw;
+    position: relative;
+    font-size: 3vw;
+    color: black;
+    text-decoration: none;
+    border: solid .2vw;
+    padding: 1vw;
+    border-radius: 5vw; 
+    box-shadow: 5px 5px 23px lightgrey;
+}
+
+.button_st a:hover{
+    background-color: lightgray;
+    color: white;
+    border: none;
+}
+
+@media only screen and (max-width:600px){
+    .Welcome h1{
+        margin-top: 40vw; 
+        font-size: 23vw;
+        z-index: 100;
+    }
+    .Welcome h2{
+        font-size: 8vw;
+    }
+    .button_st{
+        
+        text-align: center;
+    }
+    .button_st a{
+        position: relative;
+        font-size: 10vw;
+        border: solid .6vw;
+        display: block;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20vw;
+    }
+}

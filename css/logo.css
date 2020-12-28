@@ -1,0 +1,87 @@
+main{
+    margin:-8vw 5vw 0 5vw;
+display: flex;
+flex-wrap: wrap;}
+.logo{
+    width: 30vw;
+    margin-bottom: 4vw;
+}
+img{
+    width: 25vw;
+    height: 25vw;
+    margin: 2.5vw;
+     box-shadow: 5px 5px 23px lightgrey;
+}
+.grey{
+    background-color: lightgray;
+    width: 5px;
+    height: 2.4vw;
+    position: absolute;
+    margin-top: 1vw;
+}
+.under_logo{
+    display: flex;
+    margin-left: 2.5vw
+}
+.logo h1{
+    margin:0 2vw;
+    font-size: 3vw;
+}
+.logo p{
+    font-size: 1.5vw;
+    margin: 0 0 0 2vw 
+}
+.colors{
+    margin-left: 6vw;
+}
+.color_checkbox{
+    opacity: 0;
+}
+.color1, .color2{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 10px;
+    border-radius: 25px;
+}
+.color1{
+     background-color: pink;
+}
+.color2{
+     background-color: black;
+}
+@media only screen and (max-width:600px) {
+    main {
+        display: block;
+        margin: 0;
+    }
+    .logo{
+        width: 100vw;
+    }
+    .logo > img{
+        width: 50vw;
+    height: 50vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grey{
+        height: 6vw;
+    }
+    .logo h1{
+        margin-left: 3vw;
+        font-size: 6vw;
+    }
+    .logo p{
+        font-size: 4vw;
+    }
+    .under_logo{
+        margin:4vw 5vw 8vw 14vw;
+    }
+    .colors{
+        margin-left: 27vw;
+    }
+    .color1, .color2{
+        width: 4vw;
+        height: 4vw;
+    }
+}
